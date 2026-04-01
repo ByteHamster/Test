@@ -1,0 +1,79 @@
+title: AntennaPod
+email: info@antennapod.org
+description: >-
+  The easy-to-use, flexible and open-source podcast manager for Android.
+baseurl: ""
+url: "https://antennapod.org"
+twitter_username: antennapod
+github_username: AntennaPod
+mastodon_username: AntennaPod
+# Mastodon server: do not include protocol, domain only
+mastodon_server: fosstodon.org
+bluesky_username: AntennaPod.org
+
+# Build settings
+future: true
+
+plugins:
+  - jekyll-multiple-languages-plugin
+  - jekyll-mentions
+
+permalink: /:categories/:title
+
+# Localization
+languages: [en, fr, nl, it, da, de, es, fa, ja]
+# don't forget to add new languages also in _data/locales.yml
+defaultLang: en
+default_locale_in_subfolder: false
+exclude_from_localizations: ["assets"]
+
+# Collections
+collections:
+  documentation:
+    output: true
+  blog:
+    output: true
+    permalink: /blog/:year/:month/:slug
+  events:
+    output: true
+    permalink: /events/:year/:month/:title
+  contribute:
+    output: true
+  features:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+      type: "blog"
+    values:
+      layout: "blog"
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - _cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - _events/0_A meeting template.md
+include:
+  - .well-known

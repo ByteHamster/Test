@@ -1,0 +1,1 @@
+Podeu fer servir la cua per emmagatzemar aquells episodis que voleu escoltar. Si trobeu algun episodi interessant, manteniu premut i seleccioneu `Afegeix a la cua`. Si baixeu un episodi, AntennaPod l'afegeix a la cua automàticament.
