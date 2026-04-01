@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+  <head>
+    {% include head.html %}
+    {% capture redirect_to %}{% if site.lang != 'en' %}/{{ site.lang }}{% endif %}{{ page.redirect_to }}{% endcapture %}
+    <meta http-equiv="refresh" content="0; URL={{ redirect_to }}">
+  </head>
+  <body dir="auto">
+    <a href="#main-content" class="visually-hidden-focusable skip-link">{% t generic.accessibility.skip-to-content %}</a>
+    <div class="flex-grow-1">
+      {% include nav.html %}
+      <main id="main-content">
+      <div class="container-fluid bg-body-tertiary py-4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+              <h1 class="text-body fw-bold">{% t generic.download %}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid py-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+              <article class="post-content">
+                  Downloading your file. <a href="{{ redirect_to }}">Click here if the download didn't start.</a>
+                  <script>location='{{ redirect_to }}'</script>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      </main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
