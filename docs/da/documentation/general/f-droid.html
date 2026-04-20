@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  
+
+  
+  
+
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <title>Opdateringer på F-Droid – AntennaPod</title>
+  <meta name="description" content="Opdateringer på F-Droid">
+
+  <link rel="canonical" href="https://antennapod.org/da/documentation/general/f-droid">
+  <link rel="alternate" type="application/rss+xml" title="Blog posts" href="/rss.xml">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Opdateringer på F-Droid – AntennaPod">
+  <meta name="twitter:description" content="Opdateringer på F-Droid">
+  <meta name="twitter:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content="https://antennapod.org/da/documentation/general/f-droid">
+  <meta property="og:title" content="Opdateringer på F-Droid – AntennaPod">
+  <meta property="og:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+  <meta property="og:description" content="Opdateringer på F-Droid">
+  <meta property="og:site_name" content="AntennaPod">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/branding/favicons/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/branding/favicons/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/branding/favicons/favicon-16x16.png?v=2">
+  <link rel="manifest" href="/assets/branding/favicons/site.webmanifest?v=2">
+  <link rel="mask-icon" href="/assets/branding/favicons/safari-pinned-tab.svg?v=2" color="#364ff3">
+  <link rel="shortcut icon" href="/assets/branding/favicons/favicon.ico?v=2">
+  <meta name="msapplication-TileColor" content="#364ff3">
+  <meta name="msapplication-config" content="/assets/branding/favicons/browserconfig.xml?v=2">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Language redirect (loaded early, runs once per session) -->
+  <script src="/assets/js/language-redirect.js"></script>
+
+  <!-- Theme switcher (loaded early to prevent flash) -->
+  <script src="/assets/js/theme-switcher.js"></script>
+
+  <!-- Resources -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script defer src="/assets/js/search.min.js"></script>
+  <script defer src="/assets/js/tooltip.js"></script>
+  <script defer src="/assets/js/copy-url.js"></script>
+  <script defer src="/assets/js/mastodon-share.js"></script>
+  <script defer src="/assets/js/github-mentions.js"></script>
+  <script defer src="/assets/js/contributors.js"></script>
+  <script defer src="/assets/js/localize-links.js"></script>
+
+</head>
+<body dir="auto">
+<a href="#main-content" class="visually-hidden-focusable skip-link">Gå til hovedindhold</a>
+<div class="flex-grow-1">
+    <header class="sticky-top bg-body-tertiary">
+  <div class="container px-4 px-lg-0 py-2 py-md-4">
+    <nav class="navbar navbar-expand-xl p-0">
+      <a class="navbar-brand me-auto" href="/da">
+        <img src="/assets/branding/logo-full-horizontal-dynamic.svg" id="mainlogo" class="h-auto">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="d-none d-xl-flex navbar-nav align-items-center fw-medium">
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/da/about">
+            Om
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/da/blog">
+            Blog
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/da/events">
+            Begivenheder
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/da/contribute">
+            Bidrag
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2 active">
+          <a class="nav-link fw-bold text-body small" href="/da/documentation">
+            Dokumentation
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="https://forum.antennapod.org/">
+            Forum
+          </a>
+        </div>
+        
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="navbarDropdown1" aria-label="Sprogskifter" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 me-1 text-body fw-semibold">DA</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/documentation/general/f-droid">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/documentation/general/f-droid">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/documentation/general/f-droid">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/documentation/general/f-droid">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/documentation/general/f-droid">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/documentation/general/f-droid">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/documentation/general/f-droid">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/documentation/general/f-droid">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/documentation/general/f-droid">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="themeDropdown1" aria-label="Temaskifter" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown1">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>Lys</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>Mørk</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="d-xl-none d-flex align-items-center gap-1">
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="navbarDropdown2" aria-label="Sprogskifter" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 text-body fw-semibold d-none d-sm-inline">DA</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/documentation/general/f-droid">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/documentation/general/f-droid">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/documentation/general/f-droid">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/documentation/general/f-droid">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/documentation/general/f-droid">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/documentation/general/f-droid">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/documentation/general/f-droid">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/documentation/general/f-droid">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/documentation/general/f-droid">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="themeDropdown2" aria-label="Temaskifter" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown2">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>Lys</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>Mørk</button>
+          </div>
+        </div>
+        <button class="navbar-toggler border-0 py-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <img src="/assets/images/icons/burger.svg" width="24" height="24" alt="Menu">
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom px-4 py-3">
+    <a href="/da" class="offcanvas-title" id="mobileMenuLabel">
+      <img src="/assets/branding/logo-full-horizontal-dynamic.svg" class="offcanvas-logo" alt="AntennaPod-logo">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="nav flex-column flex-grow-1">
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/da/about">
+        Om
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/da/blog">
+        Blog
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/da/events">
+        Begivenheder
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/da/contribute">
+        Bidrag
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/da/documentation">
+        Dokumentation
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="https://forum.antennapod.org/">
+        Forum
+      </a>
+      
+    </nav>
+    <div class="mt-auto pt-4 border-top px-2">
+      <div class="d-flex flex-wrap gap-3">
+        
+        <a class="text-body-secondary" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-mastodon me-1"></i>Mastodon
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github me-1"></i>GitHub
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+          <i class="fa-brands fa-bluesky me-1"></i>Bluesky
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-x-twitter me-1"></i>Twitter
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main-content">
+    <div class="container-fluid">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
+
+
+
+
+
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0" id="breadcrumbs">
+    <li class="breadcrumb-item"><a href="/da">Hjem</a></li>
+    
+
+    <li class="breadcrumb-item"><a href="/da/documentation">Dokumentation
+
+      </a></li>
+
+    <li class="breadcrumb-item"><a href="/da/documentation/general">Generelt
+
+      </a></li>
+
+    <li class="breadcrumb-item active" aria-current="page">Opdateringer på F-Droid
+    </li>
+  </ol>
+</nav>
+                    <article class="post-content">
+                        <h1 id="opdateringer-på-f-droid">Opdateringer på F-Droid</h1>
+
+<p>Har du set, at der er kommet en ny udgave af AntennaPod, og spørger du dig selv:</p>
+
+<ul>
+  <li><em>hvorfor er den nyeste version ikke på F-Droid endnu?</em></li>
+  <li><em>Hvornår vil den nye version være tilgængelig på F-Droid?</em></li>
+</ul>
+
+<p>På grund af de forskellige trin, og fordi vi ikke er involveret i udgivelser på F-Droid, kan vi ikke sige, hvornår den nyeste version vil være tilgængelig der.</p>
+
+<p><strong>Kort sagt: Vi har ikke glemt F-Droid, det tager bare lidt tid. Hav tålmodighed.</strong></p>
+
+<h3 id="trinnene-til-at-udgive-en-ny-version-på-f-droid">Trinnene til at udgive en ny version på F-Droid</h3>
+
+<ol>
+  <li>Vi udgiver en betaversion, som <em>kun</em> er tilgængelig via Google Play på grund af <a href="/documentation/general/beta#f-droid">tekniske begrænsninger</a> i F-Droid.</li>
+  <li>Vi foretager en langsom, gradvis udrulning til alle Google Play-brugere. På den måde sikrer vi, at der ikke er nogen kritiske fejl. Det kan tage flere uger.</li>
+  <li>Vi opretter en <a href="https://github.com/AntennaPod/AntennaPod/releases">udgivelse på GitHub</a>. Det gør vi først, når udrulningen på Google Play er afsluttet.</li>
+  <li>F-Droid-systemer tjekker AntennaPod-arkivet og opdager en ny udgivelse. Opdateringskontrollens server kører dagligt (natten over i Europa).</li>
+  <li>F-Droid-systemer bygger appen. Det gør de for at sikre, at den app, du downloader, stemmer overens med den kildekode, vi offentliggør. Fordi der er mange apps at bygge, tager det F-Droid-serveren 1 til 2 dage at bygge appen.</li>
+  <li>En F-Droid-bidragsyder underskriver build’en kryptografisk. For at forbedre sikkerheden skal bidragsyderen tage appen og fysisk gå med den til en dedikeret computer, som ikke er forbundet til internettet. Når alle apps er signeret, uploader bidragsyderen dem til F-Droid-systemerne. Det tager normalt 1 til 2 dage.</li>
+  <li>F-Droid-systemerne behandler de nye apps og tilføjer den nye AntennaPod-udgivelse i deres indeks.</li>
+</ol>
+
+<p>På dette tidspunkt betragter vi den som ‘udgivet på F-Droid’. Men husk, at din F-Droid-klient (app-butikken) også skal opdatere sin lokale kopi af indekset. Først derefter får du besked om den seneste AntennaPod-udgivelse.</p>
+
+<h3 id="hvad-er-den-forventede-ankomsttid">Hvad er den forventede ankomsttid?</h3>
+
+<p>Som du kan se, er der mange trin, som hver især tager varierende tid. Det tager normalt over en måned, fra vi frigiver en betaversion, til vi tagger udgivelsen på GitHub. Når udgivelsen er tagget, tager det normalt fire til seks dage for F-Droid at behandle den.</p>
+
+<h3 id="hvad-du-kan-gøre-hvis-du-venter-i-spænding">Hvad du kan gøre, hvis du venter i spænding</h3>
+
+<p>Har vi ikke tagget <a href="https://github.com/AntennaPod/AntennaPod/releases">udgivelsen på GitHub</a> endnu? Så vent venligst. Opdateringen er i beta og ikke klar til offentlig udgivelse.</p>
+
+<p>Vi <em>har</em> tagget udgivelsen på GitHub? Som F-Droid-teamet <a href="https://gitlab.com/fdroid/wiki/-/wikis/FAQ#how-long-does-it-take-for-my-app-to-show-up-on-website-and-client">bemærker</a>: “Gå ikke i panik, før der er gået 7 dage, tak.”</p>
+
+<ul>
+  <li>Er de 7 dage gået, siden vi taggede udgivelsen på GitHub? Du er velkommen til at fortælle os det ved at oprette et indlæg på vores <a href="https://forum.antennapod.org/">forum</a>. Så kigger vi på det.</li>
+  <li>Taggede vi udgivelsen for 7 dage siden eller mindre? Så vent venligst bare. Eller undersøg, hvor vi er i processen.</li>
+</ul>
+
+<h4 id="undersøg-den-aktuelle-status">Undersøg den aktuelle status</h4>
+
+<p>Hvis du vil, kan du følge disse trin for at få en idé om fremskridtene:</p>
+
+<ol>
+  <li>Tjek, om og hvornår <a href="https://github.com/AntennaPod/AntennaPod/releases/latest">udgivelsen blev tagget på GitHub</a> (det kan være nødvendigt at holde musen over f.eks. ‘sidste uge’ for at se den nøjagtige dato på GitHub). Hvis det er tilfældet, burde det snart blive opfanget af opdateringskontrollen.</li>
+  <li>Tjek om <a href="https://gitlab.com/fdroid/fdroiddata/-/commits/master/metadata/de.danoeh.antennapod.yml?author=checkupdates%20bot">F-Droid’s AntennaPod-versionsliste</a> er blevet opdateret siden da. I så fald burde den snart blive behandlet af build-serveren.</li>
+  <li>Tjek, om AntennaPod blev bygget i den <a href="https://monitor.f-droid.org/builds/running">løbende cyklus</a> eller den <a href="https://monitor.f-droid.org/builds/build">sidste cyklus</a>. Du kan også bruge appen <a href="https://f-droid.org/en/packages/de.storchp.fdroidbuildstatus/">F-Droid build status</a> til dette. I så fald bør den snart blive kryptografisk signeret af en F-Droid-medarbejder.
+    <ul>
+      <li>Bemærk, at der ikke er nogen kø for apps, der skal bygges. AntennaPod er ikke opført på listerne for succes og mislykket endnu, og du vil gerne vide, om den vil blive bygget?
+        <ol>
+          <li>klik på ‘fdroiddata version’ @ commit of a build cycle</li>
+          <li>klik på ‘Browse files’</li>
+          <li>klik på ‘Find file’</li>
+          <li>kopier og indsæt <code class="language-plaintext highlighter-rouge">de.danoeh.antennapod</code>
+</li>
+          <li>åbn filen</li>
+          <li>tjek, om den indeholder den nyeste version</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+
+                    </article>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </main>
+</div>
+    <footer class="flex-shrink-0">
+  <div class="container-fluid p-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path class="svg-wave" d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <div class="container-fluid pb-2 bg-body-tertiary">
+    <div class="container">
+      <div class="row pt-2 mb-4 mb-lg-3 justify-content-between">
+        <div class="col-12 col-lg-4 col-md-12 mb-3">
+          <div class="mb-4 mb-lg-3">
+            <a href="/da">
+              <img src="/assets/branding/logo-full-horizontal-dynamic.svg" width="260" alt="AntennaPod-logo">
+            </a>
+          </div>
+          <p class="small mb-3">Den brugervenlige, fleksible og open source podcastmanager til Android.</p>
+        </div>
+        <div class="col-0 col-lg-2"></div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/da/about">
+              Om
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/da/blog">
+              Blog
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/da/contribute">
+              Bidrag
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/da/documentation">
+              Dokumentation
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/da/download">
+              Hent AntennaPod
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/da/media-kit">
+              Pressemateriale
+            </a>
+          </div>
+        </div>
+        <div class="col-5 col-lg-2 col-md-4 col-sm-4">
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+              <i class="fa-brands fa-mastodon me-1 ms-1"></i>Mastodon
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github me-1 ms-1"></i>GitHub
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+              <i class="fa-brands fa-bluesky me-1 ms-1"></i>Bluesky
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-x-twitter me-1 ms-1"></i>Twitter
+            </a>
+          </p>
+          
+          <p>
+            <a class="me-2" href="/rss.xml" target="_blank" rel="noopener">
+              <i class="fa-solid fa-rss me-1 ms-1"></i>RSS
+            </a>
+          </p>
+        </div>
+      </div>
+      <p class="w-100 border-top border-dark mb-2"></p>
+      <div class="d-block d-lg-flex justify-content-between pt-0 pb-3 copyright">
+        <div class="small mb-2 mb-lg-0">
+          © 2026 AntennaPod
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/da/license">Licens</a>
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/da/privacy">Privatlivspolitik</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>
