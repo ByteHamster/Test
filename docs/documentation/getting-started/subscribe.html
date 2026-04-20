@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+
+  
+  
+
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <title>Subscribing to a podcast – AntennaPod</title>
+  <meta name="description" content="Subscribing to a podcast">
+
+  <link rel="canonical" href="https://antennapod.org/documentation/getting-started/subscribe">
+  <link rel="alternate" type="application/rss+xml" title="Blog posts" href="/rss.xml">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Subscribing to a podcast – AntennaPod">
+  <meta name="twitter:description" content="Subscribing to a podcast">
+  <meta name="twitter:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content="https://antennapod.org/documentation/getting-started/subscribe">
+  <meta property="og:title" content="Subscribing to a podcast – AntennaPod">
+  <meta property="og:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+  <meta property="og:description" content="Subscribing to a podcast">
+  <meta property="og:site_name" content="AntennaPod">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/branding/favicons/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/branding/favicons/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/branding/favicons/favicon-16x16.png?v=2">
+  <link rel="manifest" href="/assets/branding/favicons/site.webmanifest?v=2">
+  <link rel="mask-icon" href="/assets/branding/favicons/safari-pinned-tab.svg?v=2" color="#364ff3">
+  <link rel="shortcut icon" href="/assets/branding/favicons/favicon.ico?v=2">
+  <meta name="msapplication-TileColor" content="#364ff3">
+  <meta name="msapplication-config" content="/assets/branding/favicons/browserconfig.xml?v=2">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Language redirect (loaded early, runs once per session) -->
+  <script src="/assets/js/language-redirect.js"></script>
+
+  <!-- Theme switcher (loaded early to prevent flash) -->
+  <script src="/assets/js/theme-switcher.js"></script>
+
+  <!-- Resources -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script defer src="/assets/js/search.min.js"></script>
+  <script defer src="/assets/js/tooltip.js"></script>
+  <script defer src="/assets/js/copy-url.js"></script>
+  <script defer src="/assets/js/mastodon-share.js"></script>
+  <script defer src="/assets/js/github-mentions.js"></script>
+  <script defer src="/assets/js/contributors.js"></script>
+  <script defer src="/assets/js/localize-links.js"></script>
+
+</head>
+<body dir="auto">
+<a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
+<div class="flex-grow-1">
+    <header class="sticky-top bg-body-tertiary">
+  <div class="container px-4 px-lg-0 py-2 py-md-4">
+    <nav class="navbar navbar-expand-xl p-0">
+      <a class="navbar-brand me-auto" href="/">
+        <img src="/assets/branding/logo-full-horizontal-dynamic.svg" id="mainlogo" class="h-auto">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="d-none d-xl-flex navbar-nav align-items-center fw-medium">
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/about">
+            About
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/blog">
+            Blog
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/events">
+            Events
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/contribute">
+            Contribute
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2 active">
+          <a class="nav-link fw-bold text-body small" href="/documentation">
+            Documentation
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="https://forum.antennapod.org/">
+            Forum
+          </a>
+        </div>
+        
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="navbarDropdown1" aria-label="Language switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 me-1 text-body fw-semibold">EN</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/documentation/getting-started/subscribe">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/documentation/getting-started/subscribe">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/documentation/getting-started/subscribe">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/documentation/getting-started/subscribe">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/documentation/getting-started/subscribe">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/documentation/getting-started/subscribe">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/documentation/getting-started/subscribe">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/documentation/getting-started/subscribe">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/documentation/getting-started/subscribe">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="themeDropdown1" aria-label="Theme switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown1">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>Light</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>Dark</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="d-xl-none d-flex align-items-center gap-1">
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="navbarDropdown2" aria-label="Language switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 text-body fw-semibold d-none d-sm-inline">EN</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/documentation/getting-started/subscribe">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/documentation/getting-started/subscribe">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/documentation/getting-started/subscribe">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/documentation/getting-started/subscribe">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/documentation/getting-started/subscribe">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/documentation/getting-started/subscribe">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/documentation/getting-started/subscribe">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/documentation/getting-started/subscribe">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/documentation/getting-started/subscribe">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="themeDropdown2" aria-label="Theme switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown2">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>Light</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>Dark</button>
+          </div>
+        </div>
+        <button class="navbar-toggler border-0 py-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <img src="/assets/images/icons/burger.svg" width="24" height="24" alt="Menu">
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom px-4 py-3">
+    <a href="/" class="offcanvas-title" id="mobileMenuLabel">
+      <img src="/assets/branding/logo-full-horizontal-dynamic.svg" class="offcanvas-logo" alt="AntennaPod Logo">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="nav flex-column flex-grow-1">
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/about">
+        About
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/blog">
+        Blog
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/events">
+        Events
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/contribute">
+        Contribute
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/documentation">
+        Documentation
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="https://forum.antennapod.org/">
+        Forum
+      </a>
+      
+    </nav>
+    <div class="mt-auto pt-4 border-top px-2">
+      <div class="d-flex flex-wrap gap-3">
+        
+        <a class="text-body-secondary" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-mastodon me-1"></i>Mastodon
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github me-1"></i>GitHub
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+          <i class="fa-brands fa-bluesky me-1"></i>Bluesky
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-x-twitter me-1"></i>Twitter
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main-content">
+    <div class="container-fluid">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    
+
+
+
+
+
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb p-0" id="breadcrumbs">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    
+
+    <li class="breadcrumb-item"><a href="/documentation">Documentation
+
+      </a></li>
+
+    <li class="breadcrumb-item"><a href="/documentation/getting-started">Getting started
+
+      </a></li>
+
+    <li class="breadcrumb-item active" aria-current="page">Subscribing to a podcast
+    </li>
+  </ol>
+</nav>
+                    <article class="post-content">
+                        <h1 id="subscribing-to-a-podcast">Subscribing to a podcast</h1>
+
+<p>The first thing you want to do after downloading a podcast app is to subscribe to a podcast.</p>
+
+<h2 id="subscribing">Subscribing</h2>
+<p>Open the drawer by swiping from the left or tapping the <code class="language-plaintext highlighter-rouge">☰</code> burger icon on the top left corner. Go to <code class="language-plaintext highlighter-rouge">+ Add Podcast</code>. Now, you can search, browse suggestions or add a podcast with its RSS address.</p>
+
+<p>Alternatively, you can import an OPML file or only check the Apple Podcasts, gpodder.net, fyyd or Podcast Index database respectively. Importing RSS or Atom feeds, or URL schemes like <code class="language-plaintext highlighter-rouge">pcast://</code> and <code class="language-plaintext highlighter-rouge">itpc://</code>, will also work.</p>
+
+<h2 id="subscribing-to-third-party-services">Subscribing to third-party services</h2>
+<p>We got some questions about support for platforms like SoundCloud, Mixcloud and alike. While it may be cool to have a feature to simply paste/open channel URLs in AntennaPod, <a href="https://github.com/AntennaPod/AntennaPod/issues/1297">it’s been decided</a> to not implement it. Such platforms may come and disappear, while it’s quite some work for our volunteers to implement this feature. If you’re a developer, you’re of course welcome to discuss a proposal that you’d be happy to implement.</p>
+
+<h3 id="soundcloud">SoundCloud</h3>
+<p>SoundCloud allows <a href="https://help.soundcloud.com/hc/en-us/articles/115003451347-Adding-tracks-to-your-RSS-feed">producers to create podcasts</a> from their content pretty easily. You should reach out to them, share the SoundCloud help page (linked just before), and ask if they’re willing to set it up.</p>
+
+<h3 id="mixcloud">Mixcloud</h3>
+<p>Mixcloud unfortunately doesn’t offer this option for content creators. As always, there’s someone in the podcasting community to come up with a solution. You should <a href="https://www.openparenthesis.org/2015/01/05/mixcloud-to-rss-with-enclosures">check out the options</a> as laid out in this post.</p>
+
+<h3 id="youtube">YouTube</h3>
+<p>YouTube allows you subscribe to a channel’s feed, but:</p>
+
+<ul>
+  <li>AntennaPod cannot automatically download the videos, as YouTube doesn’t allow that. Showing ads is their business model, after all.</li>
+  <li>You won’t have an image connected to your subscription, as YouTube doesn’t include it in the feeds.</li>
+</ul>
+
+<p>But it is a way to get notified about new episodes. Just add the URL of the user/channel (<code class="language-plaintext highlighter-rouge">https://www.youtube.com/user/USERNAME</code> or <code class="language-plaintext highlighter-rouge">https://www.youtube.com/channel/CHANNEL_ID</code>) in AntennaPod. You should be presented with an dialog with the option ‘RSS’; tap to add the feed. If that doesn’t work as described, add <code class="language-plaintext highlighter-rouge">https://www.youtube.com/feeds/videos.xml?channel_id=&lt;CHANNEL_ID&gt;</code> to AntennaPod. You can find the channel id in the URL of the channel. If the channel you want to subscribe to is a user account (with a URL like youtube.com/user/UserName), you can contact the user to ask for their channel id (here it’s explained <a href="https://support.google.com/youtube/answer/3250431?hl=en">how users can find their channel id</a>).</p>
+
+<p>We don’t have any information on other platforms, as you can see. We’re happy to include it here if you share your thoughts via the <a href="https://forum.antennapod.org/">forum</a>.</p>
+
+
+                    </article>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </main>
+</div>
+    <footer class="flex-shrink-0">
+  <div class="container-fluid p-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path class="svg-wave" d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <div class="container-fluid pb-2 bg-body-tertiary">
+    <div class="container">
+      <div class="row pt-2 mb-4 mb-lg-3 justify-content-between">
+        <div class="col-12 col-lg-4 col-md-12 mb-3">
+          <div class="mb-4 mb-lg-3">
+            <a href="/">
+              <img src="/assets/branding/logo-full-horizontal-dynamic.svg" width="260" alt="AntennaPod Logo">
+            </a>
+          </div>
+          <p class="small mb-3">The easy-to-use, flexible and open-source podcast manager for Android.</p>
+        </div>
+        <div class="col-0 col-lg-2"></div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/about">
+              About
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/blog">
+              Blog
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/contribute">
+              Contribute
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/documentation">
+              Documentation
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/download">
+              Download AntennaPod
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/media-kit">
+              Media Kit
+            </a>
+          </div>
+        </div>
+        <div class="col-5 col-lg-2 col-md-4 col-sm-4">
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+              <i class="fa-brands fa-mastodon me-1 ms-1"></i>Mastodon
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github me-1 ms-1"></i>GitHub
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+              <i class="fa-brands fa-bluesky me-1 ms-1"></i>Bluesky
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-x-twitter me-1 ms-1"></i>Twitter
+            </a>
+          </p>
+          
+          <p>
+            <a class="me-2" href="/rss.xml" target="_blank" rel="noopener">
+              <i class="fa-solid fa-rss me-1 ms-1"></i>RSS
+            </a>
+          </p>
+        </div>
+      </div>
+      <p class="w-100 border-top border-dark mb-2"></p>
+      <div class="d-block d-lg-flex justify-content-between pt-0 pb-3 copyright">
+        <div class="small mb-2 mb-lg-0">
+          © 2026 AntennaPod
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/license">License</a>
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

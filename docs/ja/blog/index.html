@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+      
+
+  
+  
+
+  
+  
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="view-transition" content="same-origin">
+  <title>ブログ – AntennaPod</title>
+  <meta name="description" content="AntennaPodは完全にオープンなポッドキャストプレイヤーです。アプリはオープンソースで、どんなRSSフィードでも購読できます。AntennaPodは商業的な興味のないボランティアの人たちが開発しているため、あなたはすべてをコントロールできますが、プライバシーも尊重されます。">
+
+  <link rel="canonical" href="https://antennapod.org/ja/blog/">
+  <link rel="alternate" type="application/rss+xml" title="Blog posts" href="/rss.xml">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="ブログ – AntennaPod">
+  <meta name="twitter:description" content="AntennaPodは完全にオープンなポッドキャストプレイヤーです。アプリはオープンソースで、どんなRSSフィードでも購読できます。AntennaPodは商業的な興味のないボランティアの人たちが開発しているため、あなたはすべてをコントロールできますが、プライバシーも尊重されます。">
+  <meta name="twitter:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="og:url" content="https://antennapod.org/ja/blog/">
+  <meta property="og:title" content="ブログ – AntennaPod">
+  <meta property="og:image" content="https://antennapod.org/assets/branding/covers/cover_001.png">
+  <meta property="og:description" content="AntennaPodは完全にオープンなポッドキャストプレイヤーです。アプリはオープンソースで、どんなRSSフィードでも購読できます。AntennaPodは商業的な興味のないボランティアの人たちが開発しているため、あなたはすべてをコントロールできますが、プライバシーも尊重されます。">
+  <meta property="og:site_name" content="AntennaPod">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/branding/favicons/apple-touch-icon.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/branding/favicons/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/branding/favicons/favicon-16x16.png?v=2">
+  <link rel="manifest" href="/assets/branding/favicons/site.webmanifest?v=2">
+  <link rel="mask-icon" href="/assets/branding/favicons/safari-pinned-tab.svg?v=2" color="#364ff3">
+  <link rel="shortcut icon" href="/assets/branding/favicons/favicon.ico?v=2">
+  <meta name="msapplication-TileColor" content="#364ff3">
+  <meta name="msapplication-config" content="/assets/branding/favicons/browserconfig.xml?v=2">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Language redirect (loaded early, runs once per session) -->
+  <script src="/assets/js/language-redirect.js"></script>
+
+  <!-- Theme switcher (loaded early to prevent flash) -->
+  <script src="/assets/js/theme-switcher.js"></script>
+
+  <!-- Resources -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/fontawesome/css/all.min.css">
+  <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script defer src="/assets/js/search.min.js"></script>
+  <script defer src="/assets/js/tooltip.js"></script>
+  <script defer src="/assets/js/copy-url.js"></script>
+  <script defer src="/assets/js/mastodon-share.js"></script>
+  <script defer src="/assets/js/github-mentions.js"></script>
+  <script defer src="/assets/js/contributors.js"></script>
+  <script defer src="/assets/js/localize-links.js"></script>
+
+  </head>
+  <body dir="auto">
+    <a href="#main-content" class="visually-hidden-focusable skip-link">Skip to main content</a>
+    <div class="flex-grow-1">
+    <header class="sticky-top bg-body-tertiary">
+  <div class="container px-4 px-lg-0 py-2 py-md-4">
+    <nav class="navbar navbar-expand-xl p-0">
+      <a class="navbar-brand me-auto" href="/ja">
+        <img src="/assets/branding/logo-full-horizontal-dynamic.svg" id="mainlogo" class="h-auto">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="d-none d-xl-flex navbar-nav align-items-center fw-medium">
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/ja/about">
+            AntennaPodについて
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2 active">
+          <a class="nav-link fw-bold text-body small" href="/ja/blog">
+            ブログ
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/ja/events">
+            イベント
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/ja/contribute">
+            貢献する
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="/ja/documentation">
+            ドキュメント
+          </a>
+        </div>
+        
+        
+        
+        
+        <div class="nav-item ms-2">
+          <a class="nav-link fw-bold text-body small" href="https://forum.antennapod.org/">
+            フォーラム
+          </a>
+        </div>
+        
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="navbarDropdown1" aria-label="言語切り替え" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 me-1 text-body fw-semibold">JA</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/blog/">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/blog/">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/blog/">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/blog/">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/blog/">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/blog/">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/blog/">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/blog/">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/blog/">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown ms-2">
+          <button class="nav-link dropdown-toggle bg-transparent" id="themeDropdown1" aria-label="Theme switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown1">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>ライト</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>ダーク</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Controls -->
+      <div class="d-xl-none d-flex align-items-center gap-1">
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="navbarDropdown2" aria-label="言語切り替え" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe text-body"></i>
+            <span class="ms-1 text-body fw-semibold d-none d-sm-inline">JA</span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+            
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/da/blog/">Dansk</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/de/blog/">Deutsch</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/blog/">English</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/es/blog/">Español</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fr/blog/">Français</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/it/blog/">Italiano</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/nl/blog/">Nederlands</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/fa/blog/">فارسی</a>
+  
+
+  
+    <a class="dropdown-item fw-medium small" onchange="location = this.value;" href="/ja/blog/">日本語</a>
+  
+
+
+          </div>
+        </div>
+        <div class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle bg-transparent py-1 px-2" id="themeDropdown2" aria-label="Theme switcher" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-circle-half-stroke theme-icon-auto text-body"></i>
+            <i class="fa-solid fa-sun theme-icon-light text-body d-none"></i>
+            <i class="fa-solid fa-moon theme-icon-dark text-body d-none"></i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown2">
+            <button class="dropdown-item fw-medium small" data-theme-value="auto"><i class="fa-solid fa-circle-half-stroke me-2"></i>Auto</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="light"><i class="fa-solid fa-sun me-2"></i>ライト</button>
+            <button class="dropdown-item fw-medium small" data-theme-value="dark"><i class="fa-solid fa-moon me-2"></i>ダーク</button>
+          </div>
+        </div>
+        <button class="navbar-toggler border-0 py-1 px-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <img src="/assets/images/icons/burger.svg" width="24" height="24" alt="Menu">
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu Offcanvas -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+  <div class="offcanvas-header border-bottom px-4 py-3">
+    <a href="/ja" class="offcanvas-title" id="mobileMenuLabel">
+      <img src="/assets/branding/logo-full-horizontal-dynamic.svg" class="offcanvas-logo" alt="AntennaPodのロゴ">
+    </a>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body d-flex flex-column">
+    <nav class="nav flex-column flex-grow-1">
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/ja/about">
+        AntennaPodについて
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/ja/blog">
+        ブログ
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/ja/events">
+        イベント
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/ja/contribute">
+        貢献する
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="/ja/documentation">
+        ドキュメント
+      </a>
+      
+      <a class="nav-link text-body px-2 fs-5 py-3 border-bottom" href="https://forum.antennapod.org/">
+        フォーラム
+      </a>
+      
+    </nav>
+    <div class="mt-auto pt-4 border-top px-2">
+      <div class="d-flex flex-wrap gap-3">
+        
+        <a class="text-body-secondary" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+          <i class="fa-brands fa-mastodon me-1"></i>Mastodon
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-github me-1"></i>GitHub
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+          <i class="fa-brands fa-bluesky me-1"></i>Bluesky
+        </a>
+        
+        
+        <a class="text-body-secondary" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+          <i class="fa-brands fa-x-twitter me-1"></i>Twitter
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <main id="main-content">
+        <div class="container-fluid bg-body-tertiary py-4">
+    <div class="container">
+      <h1 class="text-body fw-bold">ブログ</h1>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div id="posts" class="container py-5">
+        <!-- Category Filter -->
+        
+        
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <button class="btn btn-primary btn-sm blog-filter active" data-category="all">
+            All
+          </button>
+          
+          <button class="btn btn-outline-secondary btn-sm blog-filter" data-category="community">
+            Community
+              
+          </button>
+          
+          <button class="btn btn-outline-secondary btn-sm blog-filter" data-category="project">
+            Project Update
+              
+          </button>
+          
+          <button class="btn btn-outline-secondary btn-sm blog-filter" data-category="release">
+            Release
+              
+          </button>
+          
+          <button class="btn btn-outline-secondary btn-sm blog-filter" data-category="tutorial">
+            Tutorial
+              
+          </button>
+          
+        </div>
+        
+
+        <div class="row">
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="community">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2026/02/fosdem"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2026/fosdem.jpg" srcset="/assets/images/blog/2026/fosdem-thumb.jpg 400w, /assets/images/blog/2026/fosdem.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="AntennaPod @ FOSDEM 2026">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Community
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">AntennaPod @ FOSDEM 2026</h3>
+                          <p class="mb-4">AntennaPod contributors met at the FOSDEM 2026 conference</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                2月 11, 2026
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="community">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2024/12/stickers"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2024/AntennaPod-stickers-mail.jpeg" srcset="/assets/images/blog/2024/AntennaPod-stickers-mail-thumb.jpeg 400w, /assets/images/blog/2024/AntennaPod-stickers-mail.jpeg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Stickers!">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Community
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Stickers!</h3>
+                          <p class="mb-4">This year we made stickers. Meet Mike!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                12月 4, 2024
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="community">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2024/10/hacktoberfest-2024"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2024/hacktoberfest.png" srcset="/assets/images/blog/2024/hacktoberfest-thumb.png 400w, /assets/images/blog/2024/hacktoberfest.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="AntennaPod is participating in Hacktoberfest 2024 – Join us!">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Community
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">AntennaPod is participating in Hacktoberfest 2024 – Join us!</h3>
+                          <p class="mb-4">Whether code or non-code, we welcome your contributions. With stickers for top contributors!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                10月 24, 2024
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2024/05/modernizing-the-code-structure"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2024/codeStructureTeaser.jpg" srcset="/assets/images/blog/2024/codeStructureTeaser-thumb.jpg 400w, /assets/images/blog/2024/codeStructureTeaser.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Modernizing the AntennaPod Code Structure">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Modernizing the AntennaPod Code Structure</h3>
+                          <p class="mb-4">How we spent the last 3 years restructuring the AntennaPod code base.</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                5月 12, 2024
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="tutorial">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2023/11/google-podcasts-migration"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2023/cassette.jpg" srcset="/assets/images/blog/2023/cassette-thumb.jpg 400w, /assets/images/blog/2023/cassette.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Migrating from Google Podcasts to AntennaPod: why and how to do it">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Tutorial
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Migrating from Google Podcasts to AntennaPod: why and how to do it</h3>
+                          <p class="mb-4">Other apps might come and go, but AntennaPod is always by your side!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                11月 26, 2023
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="tutorial">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2023/09/curating-your-podcast-archive"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2023/archive.jpg" srcset="/assets/images/blog/2023/archive-thumb.jpg 400w, /assets/images/blog/2023/archive.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Curating your personal podcast archive with AntennaPod 🗃">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Tutorial
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Curating your personal podcast archive with AntennaPod 🗃</h3>
+                          <p class="mb-4">Your favourite podcast is over? No need to part ways with it!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                9月 27, 2023
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2023/05/introducing-the-home-screen"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2023/v3-home.jpg" srcset="/assets/images/blog/2023/v3-home-thumb.jpg 400w, /assets/images/blog/2023/v3-home.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Welcome Home! 🏠 Introducing AntennaPod's new default screen">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Welcome Home! 🏠 Introducing AntennaPod's new default screen</h3>
+                          <p class="mb-4">Let's show you your new home — one of the main new features in AntennaPod 3.0.</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                5月 8, 2023
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="community">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2022/10/translations-coordinator"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2022/website-translations.jpg" srcset="/assets/images/blog/2022/website-translations-thumb.jpg 400w, /assets/images/blog/2022/website-translations.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="We're looking for a translations coordinator!">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Community
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">We're looking for a translations coordinator!</h3>
+                          <p class="mb-4">AntennaPod already is available in many languages. Will you bring us to the next level?</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                10月 27, 2022
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2022/10/2-7-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2022/version2-7_inbox.jpg" srcset="/assets/images/blog/2022/version2-7_inbox-thumb.jpg 400w, /assets/images/blog/2022/version2-7_inbox.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="A new way to catch up on the latest episodes">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">A new way to catch up on the latest episodes</h3>
+                          <p class="mb-4">Version 2.7, released today, introduces the Inbox!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                10月 11, 2022
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2022/03/2-5-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2022/version2-5_synchronisation.jpg" srcset="/assets/images/blog/2022/version2-5_synchronisation-thumb.jpg 400w, /assets/images/blog/2022/version2-5_synchronisation.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2.5 release">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2.5 release</h3>
+                          <p class="mb-4">We just released version AntennaPod version 2.5. Key feature? More synchronisation options!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                3月 17, 2022
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2022/01/website-translations"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2022/website-translations.jpg" srcset="/assets/images/blog/2022/website-translations-thumb.jpg 400w, /assets/images/blog/2022/website-translations.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Let's translate this space!">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Let's translate this space!</h3>
+                          <p class="mb-4">How and why we made the website translatable</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                1月 4, 2022
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2021/12/2021-recap"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2021/recap.png" srcset="/assets/images/blog/2021/recap-thumb.png 400w, /assets/images/blog/2021/recap.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2021 Recap">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2021 Recap</h3>
+                          <p class="mb-4">What happened in the AntennaPod project in 2021</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                12月 30, 2021
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2021/07/2-3-0-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2021/release-2.3.png" srcset="/assets/images/blog/2021/release-23-thumb.png 400w, /assets/images/blog/2021/release-2.3.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2.3.0 release">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2.3.0 release</h3>
+                          <p class="mb-4">We just released version 2.3.0 of AntennaPod</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                7月 22, 2021
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="community">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2021/06/forum-anniversary"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2021/forum-anniversary.png" srcset="/assets/images/blog/2021/forum-anniversary-thumb.png 400w, /assets/images/blog/2021/forum-anniversary.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Forum Anniversary">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Community
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Forum Anniversary</h3>
+                          <p class="mb-4">Celebrating the first year of the AntennaPod forum</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                6月 1, 2021
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2021/05/2-2-0-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2021/release-2.2.png" srcset="/assets/images/blog/2021/release-22-thumb.png 400w, /assets/images/blog/2021/release-2.2.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2.2.0 release">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2.2.0 release</h3>
+                          <p class="mb-4">We just released version 2.2.0 of AntennaPod</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                5月 9, 2021
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/12/2-1-0-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/release-2.1.jpg" srcset="/assets/images/blog/2020/release-21-thumb.jpg 400w, /assets/images/blog/2020/release-2.1.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2.1.0 release">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2.1.0 release</h3>
+                          <p class="mb-4">We just released version 2.1.0 of AntennaPod</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                12月 13, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/12/new-website"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/new-website.jpg" srcset="/assets/images/blog/2020/new-website-thumb.jpg 400w, /assets/images/blog/2020/new-website.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="New website">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">New website</h3>
+                          <p class="mb-4">We have a new, modern website!</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                12月 6, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="release">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/09/2-0-0-release"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/release-2.0.jpg" srcset="/assets/images/blog/2020/release-20-thumb.jpg 400w, /assets/images/blog/2020/release-2.0.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="2.0.0 release">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Release
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">2.0.0 release</h3>
+                          <p class="mb-4">We just released version 2.0.0 of AntennaPod</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                9月 8, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/09/new-icon"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/default.png" srcset="/assets/images/blog/2020/default-thumb.png 400w, /assets/images/blog/2020/default.png 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="New icon">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">New icon</h3>
+                          <p class="mb-4">Announcing the poll results and our new icon</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                9月 4, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/06/getting-to-a-new-icon"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/design.jpg" srcset="/assets/images/blog/2020/design-thumb.jpg 400w, /assets/images/blog/2020/design.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Getting to a new icon">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Getting to a new icon</h3>
+                          <p class="mb-4">Starting the process to get to a new icon</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                6月 4, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+                
+                    <div class="col-12 col-md-4 mb-4 d-flex blog-post" data-category="project">
+                      <div class="card highlight-card position-relative p-4" dir="ltr">
+                        <a class="stretched-link" href="/ja/blog/2020/05/supporting-old-android-versions"></a>
+                          
+                          
+                          
+                          
+                          <img src="/assets/images/blog/2020/old-phone.jpg" srcset="/assets/images/blog/2020/old-phone-thumb.jpg 400w, /assets/images/blog/2020/old-phone.jpg 800w" sizes="(max-width: 768px) 100vw, 400px" loading="lazy" alt="Supporting old Android versions">
+                          
+                          <span class="badge bg-secondary position-absolute top-0 end-0 m-3">
+                            Project Update
+                              
+                          </span>
+                          
+                          <h3 class="fw-bold pt-4">Supporting old Android versions</h3>
+                          <p class="mb-4">Supporting old Android versions is hard</p>
+                          <div class="position-absolute bottom-0">
+                            <p class="text-muted">投稿日時
+                                
+                                5月 29, 2020
+                            </p>
+                          </div>
+                      </div>
+                    </div>
+                
+                
+        </div>
+    </div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+  
+  var handlersAttached = false;
+
+  function filterPosts(category) {
+    var posts = document.querySelectorAll('#posts .blog-post');
+    posts.forEach(function(post) {
+      var postCategory = post.getAttribute('data-category');
+      if (category === 'all' || postCategory === category) {
+        post.style.display = '';
+        post.classList.remove('d-none');
+      } else {
+        post.style.display = 'none';
+        post.classList.add('d-none');
+      }
+    });
+  }
+
+  function updateActiveButton(clickedBtn) {
+    var filters = document.querySelectorAll('#posts .blog-filter');
+    filters.forEach(function(btn) {
+      btn.classList.remove('active', 'btn-primary');
+      btn.classList.add('btn-outline-secondary');
+    });
+    clickedBtn.classList.add('active', 'btn-primary');
+    clickedBtn.classList.remove('btn-outline-secondary');
+  }
+
+  function initBlogFilter() {
+    var container = document.getElementById('posts');
+    if (!container) return;
+    
+    var filters = container.querySelectorAll('.blog-filter');
+    if (filters.length === 0) return;
+
+    // Only attach handlers once
+    if (handlersAttached) return;
+    handlersAttached = true;
+
+    // Use event delegation on the container
+    container.addEventListener('click', function(e) {
+      var btn = e.target.closest('.blog-filter');
+      if (!btn) return;
+      
+      e.preventDefault();
+      e.stopPropagation();
+      
+      var category = btn.getAttribute('data-category');
+      updateActiveButton(btn);
+      filterPosts(category);
+    });
+  }
+
+  // Initialize immediately or on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initBlogFilter);
+  } else {
+    initBlogFilter();
+  }
+  
+  // Handle View Transitions API - reset handler flag when page becomes visible again
+  document.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      handlersAttached = false;
+      initBlogFilter();
+    }
+  });
+})();
+</script>
+
+    </main>
+    </div>
+    <footer class="flex-shrink-0">
+  <div class="container-fluid p-0">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
+      <path class="svg-wave" d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,197.3C1120,192,1280,224,1360,240L1440,256L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
+      </path>
+    </svg>
+  </div>
+  <div class="container-fluid pb-2 bg-body-tertiary">
+    <div class="container">
+      <div class="row pt-2 mb-4 mb-lg-3 justify-content-between">
+        <div class="col-12 col-lg-4 col-md-12 mb-3">
+          <div class="mb-4 mb-lg-3">
+            <a href="/ja">
+              <img src="/assets/branding/logo-full-horizontal-dynamic.svg" width="260" alt="AntennaPodのロゴ">
+            </a>
+          </div>
+          <p class="small mb-3">使いやすく、柔軟で、オープンソースのAndroid用ポッドキャストマネージャー。</p>
+        </div>
+        <div class="col-0 col-lg-2"></div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/ja/about">
+              AntennaPodについて
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/ja/blog">
+              ブログ
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/ja/contribute">
+              貢献する
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/ja/documentation">
+              ドキュメント
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-4 col-sm-4 mb-3">
+          <div class="mb-2">
+            <a href="/ja/download">
+              AntennaPodをダウンロード
+            </a>
+          </div>
+          <div class="mb-2">
+            <a href="/ja/media-kit">
+              メディアキット
+            </a>
+          </div>
+        </div>
+        <div class="col-5 col-lg-2 col-md-4 col-sm-4">
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://fosstodon.org/@AntennaPod" target="_blank" rel="me noopener">
+              <i class="fa-brands fa-mastodon me-1 ms-1"></i>Mastodon
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://github.com/AntennaPod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github me-1 ms-1"></i>GitHub
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://bsky.app/profile/AntennaPod.org" target="_blank" rel="noopener">
+              <i class="fa-brands fa-bluesky me-1 ms-1"></i>Bluesky
+            </a>
+          </p>
+          
+          
+          <p class="mb-2">
+            <a class="me-2" href="https://twitter.com/antennapod" target="_blank" rel="noopener">
+              <i class="fa-brands fa-x-twitter me-1 ms-1"></i>Twitter
+            </a>
+          </p>
+          
+          <p>
+            <a class="me-2" href="/rss.xml" target="_blank" rel="noopener">
+              <i class="fa-solid fa-rss me-1 ms-1"></i>RSS
+            </a>
+          </p>
+        </div>
+      </div>
+      <p class="w-100 border-top border-dark mb-2"></p>
+      <div class="d-block d-lg-flex justify-content-between pt-0 pb-3 copyright">
+        <div class="small mb-2 mb-lg-0">
+          © 2026 AntennaPod
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/ja/license">ライセンス</a>
+          <span class="mx-1">|</span>
+          <a class="link-underline link-underline-opacity-0 link-underline-opacity-100-hover" href="/ja/privacy">プライバシーポリシー</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
